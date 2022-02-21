@@ -1,0 +1,52 @@
+.header1 {
+    margin: 80px 0 87px 0;
+    font-family: sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.current {
+    color: #5ECE7B;
+    border-bottom: 1px solid #5ECE7B;
+}
+
+.image {
+    width: 354px;
+    height: 330px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*margin: 0 40px 103px 100px;*/
+}
+
+.categories:first-child {
+    margin-left: 100px;
+}
+
+.card {
+    padding: 16px 16px 0 16px;
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.card-title1 {
+    margin-top: 24px;
+}
+
+.card-price {
+    font-weight: 500 !important;
+    margin-bottom: 16px;
+}

@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 117px 0 117px;
+}
+
+.link {
+    text-decoration: none;
+    margin-right: 32px;
+    color: #333333;
+}
+
+.logo {
+    width: 31px;
+    height: 28px;
+}
