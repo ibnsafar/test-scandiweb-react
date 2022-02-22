@@ -18,12 +18,14 @@ class Header extends React.Component {
                         <img className={'logo'} src={Logo} alt="logo"/>
                     </Link>
                 </div>
-                <div>
+                <div className={"right-icons"}>
                     <div className={"currencies"}>
-                        <p>$</p>
-                        <img src="./img/vector.png" alt=""/>
+                        <p className={"dollar-sign"}>$</p>
+                        <img className={"header-vector"} src={require('./img/vector.png')} alt=""/>
                     </div>
-                    <p>$</p>
+                    <div>
+                        <img className={"header-korz"} src={require('./img/korz.png')} alt=""/>
+                    </div>
                 </div>
             </div>
         )

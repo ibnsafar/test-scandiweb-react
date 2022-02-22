@@ -8,6 +8,20 @@ class Orders extends React.Component {
         count2: 2
     }
 
+    decrementFirst() {
+        if (this.state.count1 === 1) {
+            return 0;
+        }
+        this.setState({count1: this.state.count1 - 1})
+    }
+
+    decrementSecond() {
+        if (this.state.count2 === 1) {
+            return 0;
+        }
+        this.setState({count2: this.state.count2 - 1})
+    }
+
     render() {
         return (
             <>
@@ -28,9 +42,11 @@ class Orders extends React.Component {
                             </div>
                             <div className={"card-right"}>
                                 <div style={{marginRight: "12px"}} className={"cart-counter"}>
-                                    <button style={{marginBottom: "30px"}} className={"cart-inc"}>+</button>
+                                    <button onClick={() => this.setState({count1: this.state.count1 + 1})}
+                                            style={{marginBottom: "30px"}} className={"cart-inc"}>+
+                                    </button>
                                     <p style={{marginBottom: "30px"}} className={"cart-counter"}>{this.state.count1}</p>
-                                    <button className={"cart-inc"}>-</button>
+                                    <button onClick={() => this.decrementFirst()} className={"cart-inc"}>-</button>
                                 </div>
                                 <div className={"cart-img"}>
                                     <img src={require('./img/img1.png')} alt=""/>
@@ -52,12 +68,14 @@ class Orders extends React.Component {
                             </div>
                             <div className={"card-right"}>
                                 <div style={{marginRight: "12px"}} className={"cart-counter"}>
-                                    <button style={{marginBottom: "30px"}} className={"cart-inc"}>+</button>
+                                    <button onClick={() => this.setState({count2: this.state.count2 + 1})}
+                                            style={{marginBottom: "30px"}} className={"cart-inc"}>+
+                                    </button>
                                     <p style={{marginBottom: "30px"}} className={"cart-counter"}>{this.state.count2}</p>
-                                    <button className={"cart-inc"}>-</button>
+                                    <button onClick={() => this.decrementSecond()} className={"cart-inc"}>-</button>
                                 </div>
                                 <div className={"cart-img"}>
-                                    <img src={require('./img/img1.png')} alt=""/>
+                                    <img src={require('./img/glasses.png')} alt=""/>
                                 </div>
                             </div>
                         </div>
