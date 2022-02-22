@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./css/header.css";
+
 const Logo = require('./img/logo.png');
 
 class Header extends React.Component {
@@ -18,7 +19,10 @@ class Header extends React.Component {
                     </Link>
                 </div>
                 <div>
-                    <p>$</p>
+                    <div className={"currencies"}>
+                        <p>$</p>
+                        <img src="./img/vector.png" alt=""/>
+                    </div>
                     <p>$</p>
                 </div>
             </div>
